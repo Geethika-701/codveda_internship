@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Performance Optimized Site</title>
+
+<link rel="stylesheet" href="style.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Optimized Website 🚀</h1>
+
+<img src="tree.webp" loading="lazy" alt="nature image">
+
+<button onclick="loadData()">Load Data</button>
+
+<div id="output"></div>
+
+</div>
+
+<script src="script.min.js"></script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js");
+}
+</script>
+
+</body>
+</html>
